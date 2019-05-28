@@ -14,7 +14,7 @@ while trial<How_times:
     #print("Let's play rock-paper-scissors")
     #print("Rock,Paper,Scissors! 1.2.3!!!\n")
     com=random.randint(1,3)
-    you=int(input("1,2,3のいずれかをタイプしてください>>>   "))
+    you=int(input("グー:1 パー:2 チョキ:3 \n1,2,3のいずれかをタイプしてください>>>   "))
 
     if you==1:
         print('あなたはグー')
@@ -43,10 +43,10 @@ while trial<How_times:
         num.append(trial)
         rate=round(win/trial*100,5)
         win_rate.append(rate)
-        print('win:'+str(win)+'   trial'+str(trial))
-        print('num:'+str(num))
-        print('rate'+str(rate))
-        print('win_rate:'+str(win_rate)+'%')
+        #print('win:'+str(win)+'   trial'+str(trial))
+        #print('num:'+str(num))
+        print('勝率: '+str(rate))
+        #print('win_rate:'+str(win_rate)+'%')
     else:
         print('You Lose...')
         lose+=1.0
@@ -54,9 +54,16 @@ while trial<How_times:
         num.append(trial)
         rate=round(win/trial*100,5)
         win_rate.append(rate)
-        print('lose:'+str(lose)+'   trial'+str(trial))
-        print('num:'+str(num))
+        #print('lose:'+str(lose)+'   trial'+str(trial))
+        #print('num:'+str(num))
+        print('勝率: '+str(rate))
+    print('\n')
+if rate < 50:
+    print('じゃんけん弱いですね~')
+elif rate == 50:
+    print('気が合いますね!')
+else:
+    print('じゃんけん強いですね')
 
 plt.plot(num,win_rate)
 plt.show()
-#要素数の最後の数で割ればよくね？？？by岩崎

@@ -7,7 +7,7 @@ draw=0
 trial=0
 num=[]
 win_rate=[]
-while trial<3:
+while trial<1000:
     print('じゃんけん')
     print("Let's play rock-paper-scissors")
     print("Rock,Paper,Scissors! 1.2.3!!!")
