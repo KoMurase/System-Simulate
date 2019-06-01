@@ -24,7 +24,7 @@ def choiced_hand(max_prop):
 
 
 while trial<How_times:
-    print('じゃんけん')
+    print(str(trial+1)+'回戦')
     #print("Let's play rock-paper-scissors")
     #print("Rock,Paper,Scissors! 1.2.3!!!\n")
 
@@ -85,8 +85,8 @@ while trial<How_times:
         #print('num:'+str(num))
         print('勝率: '+str(rate))
     user_hand.append(you)
-    print(type(user_hand))
-    print('user_hand'+str(user_hand))
+    #print(type(user_hand))
+    #print('user_hand'+str(user_hand))
     print('\n')
 
 if rate < 50:

@@ -1,5 +1,4 @@
 import random
-import time
 import matplotlib.pyplot as plt
 win=0
 lose=0
@@ -12,9 +11,7 @@ print('最初はグー！じゃんけんほいっ')
 
 while trial<100:
     com=random.randint(1,3)
-    #you=random.randint(1,3)
     try:
-
         you=int(input('1:グー 2:パー 3:チョキ'))
         if com==1:
             print('CPはグー')
@@ -29,7 +26,6 @@ while trial<100:
             print('あなたはパー')
         elif you==3:
             print('あなたはチョキ')
-
 
         result=(com-you+3)%3
         if result == 0:
