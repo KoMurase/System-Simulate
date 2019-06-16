@@ -1,0 +1,8 @@
+﻿  eventdriven.c
+C:\Users\mkou0\Desktop\systemsimulate\eventdriven\eventdriven\eventdriven.c(40,13): warning C4244:  '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\mkou0\Desktop\systemsimulate\eventdriven\eventdriven\eventdriven.c(43,24): warning C4244:  '関数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\mkou0\Desktop\systemsimulate\eventdriven\eventdriven\eventdriven.c(51,41): warning C4244:  '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\mkou0\Desktop\systemsimulate\eventdriven\eventdriven\eventdriven.c(74,24): warning C4244:  '関数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\mkou0\Desktop\systemsimulate\eventdriven\eventdriven\eventdriven.c(76,27): warning C4244:  '関数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\mkou0\Desktop\systemsimulate\eventdriven\eventdriven\eventdriven.c(84,27): warning C4244:  '関数': 'double' から 'int' への変換です。データが失われる可能性があります。
+  eventdriven.vcxproj -> C:\Users\mkou0\Desktop\systemsimulate\eventdriven\Debug\eventdriven.exe
