@@ -1,0 +1,5 @@
+Javaでバブルソートのプログラムを作成する方法【初心者向け】
+https://techacademy.jp/magazine/19444
+
+Javaで指定範囲の乱数を生成する：Random.nextInt() | UX MILK
+https://uxmilk.jp/47989

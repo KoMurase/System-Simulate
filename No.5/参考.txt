@@ -1,0 +1,6 @@
+matplotlibのマニュアル
+https://matplotlib.org/users/pyplot_tutorial.html
+>>40個あるらしい
+
+>>解説
+https://own-search-and-study.xyz/2016/08/08/matplotlib-pyplot%E3%81%AEplot%E3%81%AE%E5%85%A8%E5%BC%95%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%84%E3%81%93%E3%81%AA%E3%81%99/
