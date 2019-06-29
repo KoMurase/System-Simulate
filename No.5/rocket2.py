@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
-def main():
-    E = int(input('積み込み量をいくらにしますか'))
+from pprint import pprint
+#def main(E,consumption):
+def main(E):
+    #E = int(input('積み込み量をいくらにしますか'))
     M1 = 500 + E
     height = 0
     t = 0
@@ -9,7 +11,7 @@ def main():
     V = []
     H = []
     time = []
-    while height < 160000:
+    while height < 160000 :
         #syohi = int(input('消費量はいくらにしますか(max:10 kg/s)'))
         syohi = 10.0
         M2 = M1 - syohi*4
@@ -17,8 +19,6 @@ def main():
         F = 300 * 9.81 *4*syohi - M*g
         a = F/M
         M1 = M2
-
-
         print('M:'+str(M))
         v2 = v1+a
         print('v2:'+str(v2))
@@ -39,36 +39,33 @@ def main():
         print('height:'+str(height))
         print('v2:'+str(v2))
         print(str(t)+'s')
+    return height,v1
+#def mk_graph():
+    #fig,axes = plt.subplots(3,3,figsize=(10,10))
+#    for ax, result_graph in zip(axes.ravel,set)
 
-    Y = [V,H]
-    fig = plt.figure()
-    ax1 = fig.add_subplot()
+    fig,ax1 = plt.subplots()
+    ax1.plot(V,color = 'green',label='速度',)
     #y1 = V
     #t = 横軸
-    ln1 = ax1.plot(time,V,)
-
-    for i in Y:
-        plt.plot(time,i)
+    ax2 = ax1.twinx()
+    ax2.plot(H,color = 'skyblue',label='高度')
+    plt.axhline(y=160000,color='red')
+    plt.xlabel('時間[s]')
     plt.show()
 
+#def kikan(V,)
 
 if __name__=='__main__':
-    main()
+    #set = [3000,4000,5000]
+    result=main(4000)
 
-    """
-    消費燃料Xkgとすると
-    F = 4*300*9.81*X   #1s間の推力
-    trueF = F - trueM*g
-    運動方程式 ma = Fより
-    trueM*a = trueF
-    count=0
-    M=540   #ロケットの燃料なしでの重量
-    g=9.81
-    engine = 300*9.81
-    a = 0
-    v=0
-    x=0
-    m=500 #燃料
-    height=0
-    suiryoku = 4*300*9.81 #消費燃料Xkgあたり
-    """
+    kikan(height,v)
+
+    fig,ax1 = plt.subplots()
+    ax1.plot(result[0],color = 'red',label='速度',)
+    ax2 = ax1.twinx()
+    ax2.plot(result[1],color = 'skyblue',label='高度')
+    plt.axhline(y=160000,color='yellow')
+    plt.xlabel('時間[s]')
+    plt.show()
